@@ -2,6 +2,14 @@
 <html>
     <head>
         <style>
+
+            @font-face {
+   font-family: casad;
+   src: url(asset/casad-serial-regular.ttf);
+}
+h1 {
+   font-family: casad;
+}
 div {
     margin-inline: auto;
     max-width: fit-content;
@@ -13,7 +21,20 @@ div {
 
     <body>
        <div>
-        <h1>S8KR</h1>
-       </div> 
+            <h1 title="remember to put something here!"><sub>S</sub>8<sub>K</sub><sup>R</sup></h1>
+       </div>
+
+       <div>
+            <button popovertarget="my-popover">popover</button>
+            <div popover id="my-popover">i want to make it behave like this but gray out the background like a dialog</div>
+       </div>
+
+       <div>
+                <dialog id="myDialog">
+            <p>or make this act like a popover, click anywhere to hide</p>
+            <button onclick="myDialog.close()">close</button>
+        </dialog>
+        <button onclick="myDialog.showModal()">dialog</button>
+       </div>
     </body>
 </html>
