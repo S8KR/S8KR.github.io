@@ -1,0 +1,63 @@
+@font-face {
+   font-family: casad;
+   src: url(asset/casad-serial-regular.ttf);
+   font-display: swap;
+}
+
+html, body, h1 {
+  background-color: #EEEEEE;
+  font-family: "casad", "Times New Roman", serif;
+  margin: 0;
+  overscroll-behavior: none;
+  line-height: 1.25;
+}
+::selection {
+  background-color:#004a9940
+}
+
+.title {
+  text-decoration: none;
+  color: #000000;
+  padding: 0.1rem;
+}
+header {
+  background-color: #EEEEEE;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #000;
+  min-height: 4rem;
+  display: flex;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 1.25rem;
+  box-sizing: border-box;
+}
+
+.header-ctas a {
+  text-decoration: none;
+}
+
+.header-link {
+  color: #ff6600;
+}
+.header-link:visited {
+  font-style:italic;
+}
+.header-link:hover {
+  text-decoration:underline;
+}
+.header-link:active {
+  color: #c7511f;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0.25rem 0.45rem;
+  font-size: 0.9rem;
+}
